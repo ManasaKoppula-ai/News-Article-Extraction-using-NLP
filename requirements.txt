@@ -1,0 +1,8 @@
+pandas
+torch
+transformers
+boto3
+selenium
+scrapy
+streamlit
+Pillow
