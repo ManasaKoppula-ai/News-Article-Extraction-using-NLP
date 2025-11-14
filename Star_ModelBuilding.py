@@ -72,8 +72,8 @@ df.to_csv("StarArticles_summary{}.csv".format(time.strftime("%d%m%Y")), index=Fa
 def upload_to_s3():
     s3 = boto3.resource(service_name='s3',
                         region_name='us-east-2',
-                        aws_access_key_id='AKIAR6JTQT3GS77CI6AW',
-                        aws_secret_access_key='x4id5W18ohwVH/eVdqBVpR1OuVW+P1FNACGN3uXI')
+                        aws_access_key_id='<YOUR KEY HERE>',
+                        aws_secret_access_key='<YOUR KEY HERE>')
 
     for bucket in s3.buckets.all():
         print(bucket.name)
@@ -84,3 +84,4 @@ def upload_to_s3():
 
 # Upload the output file to Amazon S3 bucket
 upload_to_s3()
+
